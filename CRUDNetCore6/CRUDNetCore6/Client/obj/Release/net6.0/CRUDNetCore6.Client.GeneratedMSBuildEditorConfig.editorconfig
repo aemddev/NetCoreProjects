@@ -9,41 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = CRUDNetCore6.Client
 build_property.RootNamespace = CRUDNetCore6.Client
-build_property.ProjectDir = C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDNetCore6\CRUDNetCore6\Client\
+build_property.ProjectDir = C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDNetCore6\CRUDNetCore6\Client
+build_property.MSBuildProjectDirectory = C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Andrés/Documents/Programacion Andres/Curso C\#/Proyectos/CRUDNetCore6/CRUDNetCore6/Client/App.razor]
+[C:/Users/Andrés/Source/Repos/aemddev/NetCoreProjects/CRUDNetCore6/CRUDNetCore6/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andrés/Documents/Programacion Andres/Curso C\#/Proyectos/CRUDNetCore6/CRUDNetCore6/Client/Pages/DeleteUser.razor]
+[C:/Users/Andrés/Source/Repos/aemddev/NetCoreProjects/CRUDNetCore6/CRUDNetCore6/Client/Pages/DeleteUser.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlVXNlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andrés/Documents/Programacion Andres/Curso C\#/Proyectos/CRUDNetCore6/CRUDNetCore6/Client/Pages/Index.razor]
+[C:/Users/Andrés/Source/Repos/aemddev/NetCoreProjects/CRUDNetCore6/CRUDNetCore6/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andrés/Documents/Programacion Andres/Curso C\#/Proyectos/CRUDNetCore6/CRUDNetCore6/Client/Pages/NewUser.razor]
+[C:/Users/Andrés/Source/Repos/aemddev/NetCoreProjects/CRUDNetCore6/CRUDNetCore6/Client/Pages/NewUser.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3VXNlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andrés/Documents/Programacion Andres/Curso C\#/Proyectos/CRUDNetCore6/CRUDNetCore6/Client/Shared/SurveyPrompt.razor]
+[C:/Users/Andrés/Source/Repos/aemddev/NetCoreProjects/CRUDNetCore6/CRUDNetCore6/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andrés/Documents/Programacion Andres/Curso C\#/Proyectos/CRUDNetCore6/CRUDNetCore6/Client/_Imports.razor]
+[C:/Users/Andrés/Source/Repos/aemddev/NetCoreProjects/CRUDNetCore6/CRUDNetCore6/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Andrés/Documents/Programacion Andres/Curso C\#/Proyectos/CRUDNetCore6/CRUDNetCore6/Client/Shared/MainLayout.razor]
+[C:/Users/Andrés/Source/Repos/aemddev/NetCoreProjects/CRUDNetCore6/CRUDNetCore6/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-541hklpt35
 
-[C:/Users/Andrés/Documents/Programacion Andres/Curso C\#/Proyectos/CRUDNetCore6/CRUDNetCore6/Client/Shared/NavMenu.razor]
+[C:/Users/Andrés/Source/Repos/aemddev/NetCoreProjects/CRUDNetCore6/CRUDNetCore6/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-yf7f6wl5x2
