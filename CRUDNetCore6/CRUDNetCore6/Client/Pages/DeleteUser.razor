@@ -1,0 +1,53 @@
+﻿@page "/User/Delete/{Id:int}"
+@using CRUDNetCore6.Shared
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<h2>DeleteUser</h2>
+<br />
+<div class="form-group">
+	<h4>are you sure you want to delete?</h4>
+	<table class="table">
+		<tbody>
+			<tr>
+				<td>Name</td>
+				<td>@user.Name</td>
+			</tr>
+			<tr>
+				<td>Lastname</td>
+				<td>@user.Lastname</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>@user.Email</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div>
+	<input type="submit" value="Delete" @onclick="(async() => await Delete(user.Id))" class="btn btn-danger" />
+	<input type="submit" value="Cancel" @onclick="(() => Cancel())" class="btn btn-warning" />
+</div>
+
+@code {
+	[Parameter]
+	public int Id { get; set; }
+	User user = new User();
+
+	protected override async Task OnInitializedAsync()
+	{
+		user = await Http.GetFromJsonAsync<User>("api/User/" + Id.ToString());
+	}
+
+	protected async Task Delete(int id)
+	{
+		await Http.DeleteAsync("api/User/" + id);
+		NavigationManager.NavigateTo("/");
+	}
+
+	void Cancel()
+	{
+		NavigationManager.NavigateTo("/");
+	}
+
+}

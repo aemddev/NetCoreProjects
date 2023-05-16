@@ -1,0 +1,13 @@
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\obj\Debug\CRUDProject.csproj.AssemblyReference.cache
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\obj\Debug\CRUDProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\obj\Debug\CRUDProject.Properties.Resources.resources
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\obj\Debug\CRUDProject.Views.ItemView.resources
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\obj\Debug\CRUDProject.csproj.GenerateResource.cache
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\obj\Debug\CRUDProject.csproj.CoreCompileInputs.cache
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\bin\Debug\CRUDProject.exe.config
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\bin\Debug\CRUDProject.exe
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\bin\Debug\CRUDProject.pdb
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\obj\Debug\CRUDProject.exe
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\obj\Debug\CRUDProject.pdb
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\obj\Debug\CRUDProject.Views.MainView.resources
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\CRUDProject\CRUDProject\obj\Debug\CRUDProject.Views.HomeView.resources

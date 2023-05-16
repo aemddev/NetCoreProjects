@@ -1,0 +1,93 @@
+﻿@page "/"
+@using CRUDNetCore6.Shared
+@inject HttpClient Http;
+<h1>User List</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <a href="/User/NewUser" class="btn btn-primary" role="button">
+            <i class="fas da-user-plus"></i>
+            New User
+        </a>
+    </div>
+    <div class="input-group-append">
+        <input type="text" class="form-control" placeholder="Search by name"
+        @bind="emptyString" @bind:event="oninput" @onkeyup="SearchFilter"/>
+        @if(emptyString.Length > 0)
+        {
+            <div class="input-group-append">
+                <button class="btn btn-danger" @onclick="ClearSearch">
+                    <i class="fas fa-times"/>
+                    Clear
+                </button>
+            </div>
+        }
+    </div>
+</div>
+<br />
+@if (list == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-striped align-middle table-bordered">
+        <thead class="table-success">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in list)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Name</td>
+                    <td>@user.Lastname</td>
+                    <td>@user.Phone</td>
+                    <td>@user.Email</td>
+                    <td>
+                        <a href='/user/edit/@user.Id' class="btn btn-secondary" role="button">
+                            Edit
+                        </a>
+                        <a href='/user/delete/@user.Id' class="btn btn-danger" role="button">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<User> list;
+    private List<User> listAux;
+    string emptyString = String.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        list = await Http.GetFromJsonAsync<List<User>>("api/User");
+        listAux = list;
+    }
+    protected void SearchFilter()
+    {
+        if (!string.IsNullOrEmpty(emptyString))
+        {
+            list = listAux.Where(x => x.Name.IndexOf(emptyString, StringComparison.OrdinalIgnoreCase) != -1).ToList();
+        }
+        else
+        {
+            list = listAux;
+        }
+    }
+    protected void ClearSearch()
+    {
+        emptyString = string.Empty;
+        list = listAux;
+    }
+}

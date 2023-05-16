@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CRUDNetCore6.Server.props" />
+</Project>
