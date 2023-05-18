@@ -3229,11 +3229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andrés\\Documents\\Programacion Andres\\Curso C#\\Proyectos\\CRUDNetCore6\\CRUDNetCore6\\Shared\\CRUDNetCore6.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\Andrés\\Source\\Repos\\aemddev\\NetCoreProjects\\CRUDNetCore6\\CRUDNetCore6\\Shared\\CRUDNetCore6.Shared.csproj",
       "projectName": "CRUDNetCore6.Shared",
-      "projectPath": "C:\\Users\\Andrés\\Documents\\Programacion Andres\\Curso C#\\Proyectos\\CRUDNetCore6\\CRUDNetCore6\\Shared\\CRUDNetCore6.Shared.csproj",
+      "projectPath": "C:\\Users\\Andrés\\Source\\Repos\\aemddev\\NetCoreProjects\\CRUDNetCore6\\CRUDNetCore6\\Shared\\CRUDNetCore6.Shared.csproj",
       "packagesPath": "C:\\Users\\Andrés\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andrés\\Documents\\Programacion Andres\\Curso C#\\Proyectos\\CRUDNetCore6\\CRUDNetCore6\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\Andrés\\Source\\Repos\\aemddev\\NetCoreProjects\\CRUDNetCore6\\CRUDNetCore6\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

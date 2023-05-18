@@ -224,15 +224,15 @@
       "mscorlib.dll": "sha256-C3gpWQMELcHYfrHU\/1agQUvWTtSNs9Ul2suMxcKFnIc=",
       "netstandard.dll": "sha256-CgGkoZQx73t3qchcsu85kgBcgrjNEOiudArOwKNb18k=",
       "System.Private.CoreLib.dll": "sha256-6nUSjiT7okMlkN897OnDypwppYuK7JxTahOClXkAuwE=",
-      "CRUDNetCore6.Shared.dll": "sha256-jz\/l5653MNZF9\/nfDq6G+zhKQ7W5re+Mj3tQR4KBW1g=",
-      "CRUDNetCore6.Client.dll": "sha256-AF6APdha4tSzWJgYBFa3KK2jZm8u0kxiCjLdAEC12NY="
+      "CRUDNetCore6.Shared.dll": "sha256-ePPsn0rH\/pvr\/kmRp\/oiYBBaYVX5L7ohenrItBn+\/rg=",
+      "CRUDNetCore6.Client.dll": "sha256-GglicVCzaJWLpeTZfoL+Apui\/HMhrTnhGv+xzNuClX0="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "CRUDNetCore6.Shared.pdb": "sha256-FFKZw4Gx8Tbqmm5gX9zxFkkw2Scxcd\/n1GXvIzvbzqw=",
-      "CRUDNetCore6.Client.pdb": "sha256-AYhYOO8dRw36MEiilzcKX2dsUk28EDa06M\/T1NbYxzw="
+      "CRUDNetCore6.Shared.pdb": "sha256-vwmQRD5hBWDZKs60FdqbSAPvU\/LJj2+KK7oj26BbHb4=",
+      "CRUDNetCore6.Client.pdb": "sha256-QTdULBhUtErKjK68g61b7XEfz2HN+XwCqOZcpOuUjCY="
     },
     "runtime": {
       "dotnet.6.0.16.auxlw025se.js": "sha256-GT2gK+GjOisRXJY+9yh6H8s6K\/KDIsaFMFIgWvAnttY=",
