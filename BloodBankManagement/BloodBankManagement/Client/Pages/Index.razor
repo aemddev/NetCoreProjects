@@ -1,0 +1,92 @@
+﻿@page "/"
+@using BloodBankManagement.Shared
+@inject HttpClient Http;
+<h1>Doner List</h1>
+<br />
+<div>
+    <div class="input-group-append">
+        <input type="text" class="form-control" placeholder="Search by name"
+        @bind="emptyString" @bind:event="oninput" @onkeyup="SearchFilter"/>
+        @if(emptyString.Length > 0)
+        {
+            <div class="input-group-append">
+                <button class="btn btn-danger" @onclick="ClearSearch">
+                    <i class="fas fa-times"/>
+                    Clear
+                </button>
+            </div>
+        }
+    </div>
+</div>
+<br />
+@if (list == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-striped align-middle table-bordered">
+        <thead class="table-success">
+            <tr>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Phone</th>
+                <th>Blood Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var doner in list)
+            {
+                <tr>
+                    <td>@doner.Name</td>
+                    <td>@doner.Lastname</td>
+                    <td>@doner.Phone</td>
+                    <td>@doner.BloodType</td>
+                    <td>
+                        <a href='/Doner/InfoDoner/@doner.Id' class="btn btn-info" role="button">
+                            Info
+                        </a>
+                    </td>
+                    <td>
+                        <a href='/Doner/EditDoner/@doner.Id' class="btn btn-secondary" role="button">
+                            Edit
+                        </a>
+                        <a href='/Doner/DeleteDoner/@doner.Id' class="btn btn-danger" role="button">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Doner> auxList;
+    private List<Doner> list;
+    string emptyString = string.Empty;
+    //take all list of doner from the controller
+    protected override async Task OnInitializedAsync()
+    {
+        list = await Http.GetFromJsonAsync<List<Doner>>("api/Doner");
+        auxList = list;
+    }
+    //Search Bar to filter a specific name
+    protected void SearchFilter()
+    {
+        if (!string.IsNullOrWhiteSpace(emptyString))
+        {
+            list = auxList.Where(x => x.Name.IndexOf(emptyString, StringComparison.OrdinalIgnoreCase) != -1).ToList();
+        }
+        else
+        {
+            list = auxList;
+        }
+    }
+    //button to clear the search bar
+    protected void ClearSearch()
+    {
+        emptyString = string.Empty;
+        list = auxList;
+    }
+}

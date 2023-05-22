@@ -1,0 +1,87 @@
+﻿@page "/Doner/NewDoner"
+@page "/Doner/EditDoner/{Id:int}"
+@using BloodBankManagement.Shared
+@inject HttpClient Http;
+@inject NavigationManager NavigationManager
+
+<h2>@Title Doner</h2>
+<hr />
+<EditForm Model="@doner" OnValidSubmit="SaveDoner">
+	<DataAnnotationsValidator />
+	<div class="mb-3">
+		<label for="Name" class="form-label">Name</label>
+		<div class="col-md-4">
+			<InputText class="form-control" @bind-Value="doner.Name" />
+		</div>
+	<ValidationMessage For="@(() => doner.Name)" />
+	</div>
+	<div class="mb-3">
+		<label for="Lastname" class="form-label">Lastname</label>
+		<div class="col-md-4">
+			<InputText class="form-control" @bind-Value="doner.Lastname" />
+		</div>
+	<ValidationMessage For="@(() => doner.Lastname)" />
+	</div>
+		<div class="mb-3">
+		<label for="Cellnumber" class="form-label">Phone</label>
+		<div class="col-md-4">
+			<InputText class="form-control" @bind-Value="doner.Phone" />
+		</div>
+	<ValidationMessage For="@(() => doner.Phone)" />
+	</div>
+		<div class="mb-3">
+		<label for="BloodType" class="form-label">Blood Type</label>
+		<div class="col-md-4">
+            <InputSelect @bind-Value="doner.BloodType">
+                <option value="">Select Blood Type ...</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="A+">A+</option>
+				<option value="A-">A-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+				<option value="B+">B+</option>
+                <option value="B-">B-</option>
+            </InputSelect>
+		</div>
+	<ValidationMessage For="@(() => doner.BloodType)" />
+	</div>
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary">Save</button>
+		<button class="btn btn-warning" @onclick="Cancel">Cancel</button>
+	</div>
+</EditForm>
+
+@code {
+	[Parameter]
+	public int Id { get; set; }
+	protected string Title = "New";
+	protected Doner doner = new();
+	//Search all data from one Doner from the controller
+	protected override async Task OnParametersSetAsync()
+	{
+		if(Id != 0)
+		{
+			Title = "Edit";
+			doner = await Http.GetFromJsonAsync<Doner>("api/Doner/" + Id.ToString());
+		}
+	}
+	//Save or create a new Doner, if the id = 0, we talk about a new doner
+	protected async Task SaveDoner()
+	{
+		if (doner.Id != 0)
+		{
+			await Http.PutAsJsonAsync("api/Doner", doner);
+		}
+		else
+		{
+			await Http.PostAsJsonAsync("api/Doner", doner);
+		}
+		Cancel();
+	//back to the main menu
+	}
+	public void Cancel()
+	{
+		NavigationManager.NavigateTo("/");
+	}
+}

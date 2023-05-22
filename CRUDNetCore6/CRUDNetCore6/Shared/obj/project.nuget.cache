@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KtPt4vWgjbdMQMdUeZo3qVUBrA0vEVN+r7n7i9tj5DvlsV5R7+mPV4mHDbRuZHP/4ZWqgllsKTIPHvIrwMb1EQ==",
+  "dgSpecHash": "MwytdYgmMGBFlvFoYMJdvL83Jy2rNPuw65nqebXRI7zsuxWRm5//PAxN6I+gQoO2kjttv695DoNx8MImkwdelQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andrés\\Source\\Repos\\aemddev\\NetCoreProjects\\CRUDNetCore6\\CRUDNetCore6\\Shared\\CRUDNetCore6.Shared.csproj",
+  "projectFilePath": "C:\\Users\\Andrés\\source\\repos\\aemddev\\NetCoreProjects\\CRUDNetCore6\\CRUDNetCore6\\Shared\\CRUDNetCore6.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andrés\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Andrés\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

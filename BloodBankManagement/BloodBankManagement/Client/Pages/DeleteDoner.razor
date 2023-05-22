@@ -1,0 +1,53 @@
+﻿@page "/Doner/DeleteDoner/{Id:int}"
+@using BloodBankManagement.Shared
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<h2>Delete Doner</h2>
+<br />
+<div class="form-group">
+	<h4>Are you sure you want to delete?</h4>
+	<table class="table">
+		<tbody>
+			<tr>
+				<td>Name</td>
+				<td>@doner.Name</td>
+			</tr>
+			<tr>
+				<td>Lastname</td>
+				<td>@doner.Lastname</td>
+			</tr>
+			<tr>
+				<td>Blood Type</td>
+				<td>@doner.BloodType</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div>
+	<input type="submit" value="Delete" @onclick="(async() => await Delete(doner.Id))" class="btn btn-danger" />
+	<input type="submit" value="Cancel" @onclick="(() => Cancel())" class="btn btn-warning" />
+</div>
+
+@code {
+	[Parameter]
+	public int Id { get; set; }
+	Doner doner = new Doner();
+	//Search all data from one Doner from the controller
+	protected override async Task OnInitializedAsync()
+	{
+		doner = await Http.GetFromJsonAsync<Doner>("api/Doner/" + Id.ToString());
+	}
+	//Delete one doner
+	protected async Task Delete(int id)
+	{
+		await Http.DeleteAsync("api/Doner/" + id);
+		NavigationManager.NavigateTo("/");
+	}
+
+	void Cancel()
+	{
+		NavigationManager.NavigateTo("/");
+	}
+
+}

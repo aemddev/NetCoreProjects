@@ -1,0 +1,129 @@
+﻿@page "/Doner/InfoDoner/{Id:int}"
+@using BloodBankManagement.Shared
+@inject HttpClient Http;
+@inject NavigationManager NavigationManager
+
+<h3>InfoDoner</h3>
+<div>
+    <table class="table table-striped align-middle table-bordered">
+    <thead class="table-success">
+        <tr>
+            <th>Name</th>
+            <th>Lastname</th>
+            <th>Phone</th>
+            <th>Blood Type</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td>@doner.Name</td>
+            <td>@doner.Lastname</td>
+            <td>@doner.Phone</td>
+            <td>@doner.BloodType</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div>
+    <br />
+    <h4>Can donate to</h4>
+    <br />
+</div>
+<div>
+    @if (listReceivers == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else if(listReceivers.Count == 0)
+    {
+        <h5>No receivers available</h5>
+    }
+    else
+    {
+        <table class="table table-striped align-middle table-bordered">
+            <thead class="table-success">
+                <tr>
+                    <th>Name</th>
+                    <th>Lastname</th>
+                    <th>Phone</th>
+                    <th>Blood Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var donater in listReceivers)
+                {
+                    <tr>
+                        <td>@donater.Name</td>
+                        <td>@donater.Lastname</td>
+                        <td>@donater.Phone</td>
+                        <td>@donater.BloodType</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+<div>
+    <br />
+    <h4>Can receive from</h4>
+    <br />
+</div>
+<div>
+    @if (listDonors == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else if(listDonors.Count == 0)
+    {
+        <h5>No donors available</h5>
+    }
+    else
+    {
+        <table class="table table-striped align-middle table-bordered">
+            <thead class="table-success">
+                <tr>
+                    <th>Name</th>
+                    <th>Lastname</th>
+                    <th>Phone</th>
+                    <th>Blood Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var donater in listDonors)
+                {
+                    <tr>
+                        <td>@donater.Name</td>
+                        <td>@donater.Lastname</td>
+                        <td>@donater.Phone</td>
+                        <td>@donater.BloodType</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+<br />
+<div>
+    <input type="submit" value="Back" class="btn btn-warning" @onclick="(()=>BackToMenu())"/>
+</div>
+<br />
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    Doner doner = new();
+    private List<Doner> listReceivers;
+    private List<Doner> listDonors;
+    //take from the controller all the donors and receivers of one person
+    protected override async Task OnParametersSetAsync()
+    {
+        doner = await Http.GetFromJsonAsync<Doner>("api/Doner/" + Id.ToString());
+        listReceivers = await Http.GetFromJsonAsync<List<Doner>>($"api/Doner/{Id.ToString()}/CanDonate");
+        listDonors = await Http.GetFromJsonAsync<List<Doner>>($"api/Doner/{Id.ToString()}/CanReceive");
+    }
+
+    void BackToMenu()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}

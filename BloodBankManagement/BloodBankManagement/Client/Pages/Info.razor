@@ -1,0 +1,18 @@
+﻿@page "/Info"
+@inject HttpClient Http;
+@inject NavigationManager NavigationManager
+<h3>Blood compatibility chart</h3>
+<div>
+	<img src="/Images/Blood_donor_chart.png" alt="Blood compatibility chart" width="500" height="400"/>
+
+</div>
+<br />
+<div>
+	<input type="submit" value="Back" @onclick="(() => BackToIndex())" class="btn btn-warning" />
+</div>
+@code {
+	void BackToIndex()
+	{
+		NavigationManager.NavigateTo("/");
+	}
+}

@@ -1,0 +1,14 @@
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\bin\Debug\net6.0\BloodBankManagement.Shared.deps.json
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\bin\Debug\net6.0\BloodBankManagement.Shared.runtimeconfig.json
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\bin\Debug\net6.0\BloodBankManagement.Shared.dll
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\bin\Debug\net6.0\BloodBankManagement.Shared.pdb
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\obj\Debug\net6.0\BloodBankManagement.Shared.csproj.AssemblyReference.cache
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\obj\Debug\net6.0\BloodBankManagement.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\obj\Debug\net6.0\BloodBankManagement.Shared.AssemblyInfoInputs.cache
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\obj\Debug\net6.0\BloodBankManagement.Shared.AssemblyInfo.cs
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\obj\Debug\net6.0\BloodBankManagement.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\obj\Debug\net6.0\BloodBankManagement.Shared.dll
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\obj\Debug\net6.0\refint\BloodBankManagement.Shared.dll
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\obj\Debug\net6.0\BloodBankManagement.Shared.pdb
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\obj\Debug\net6.0\BloodBankManagement.Shared.genruntimeconfig.cache
+C:\Users\Andrés\Documents\Programacion Andres\Curso C#\Proyectos\BloodBankManagement\BloodBankManagement\Shared\obj\Debug\net6.0\ref\BloodBankManagement.Shared.dll

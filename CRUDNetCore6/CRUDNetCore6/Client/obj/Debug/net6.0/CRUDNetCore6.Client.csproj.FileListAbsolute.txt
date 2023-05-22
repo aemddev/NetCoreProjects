@@ -1856,10 +1856,6 @@ C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\
 C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\build-gz\Zdlf9quP.gz
 C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\build-gz\w8QjyDen.gz
 C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\build-gz\BUL1uSjh.gz
-C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\build-gz\2La5WWMX.gz
-C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\build-gz\AfRl8eie.gz
-C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\build-gz\dydQv+aA.gz
-C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\build-gz\YR8fZ8cS.gz
 C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\build-gz\xtegx50r.gz
 C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\blazor.boot.json
 C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\staticwebassets\msbuild.CRUDNetCore6.Client.Microsoft.AspNetCore.StaticWebAssets.props
@@ -1878,3 +1874,7 @@ C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\
 C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\refint\CRUDNetCore6.Client.dll
 C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\CRUDNetCore6.Client.pdb
 C:\Users\Andrés\Source\Repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\ref\CRUDNetCore6.Client.dll
+C:\Users\Andrés\source\repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\build-gz\EzybXeP7.gz
+C:\Users\Andrés\source\repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\build-gz\Mo8dmdN9.gz
+C:\Users\Andrés\source\repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\build-gz\jyw+xPwA.gz
+C:\Users\Andrés\source\repos\aemddev\NetCoreProjects\CRUDNetCore6\CRUDNetCore6\Client\obj\Debug\net6.0\build-gz\Mw+nker0.gz
